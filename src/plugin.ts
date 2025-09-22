@@ -21,7 +21,7 @@ import { parse as urlParse } from 'url'
 // import * as fs from 'fs';
 
 import { Dropbox, Error, sharing } from 'dropbox';
-
+import * as lead from 'lead'
 
 /* This is a gulp plugin. It is compliant with best practices for Gulp plugins (see
 https://github.com/gulpjs/gulp/blob/master/docs/writing-a-plugin/guidelines.md#what-does-a-good-plugin-look-like ) */
@@ -161,6 +161,6 @@ export function dest(directory:string, configObj: any) {
 
     });
 
-
-    return strm;
+    // Sink the output stream to start flowing
+    return lead(strm);
 }

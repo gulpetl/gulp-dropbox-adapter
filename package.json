@@ -50,6 +50,7 @@
     "dropbox": "^10.34.0",
     "from2": "^2.3.0",
     "gulp-error-handle": "^1.0.1",
+    "lead": "^4.0.0",
     "loglevel": "^1.9.2",
     "merge": "^2.1.1",
     "pkginfo": "^0.4.1",
