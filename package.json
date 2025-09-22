@@ -12,7 +12,12 @@
   "main": "cjs/plugin.js",
   "typings": "cjs/plugin.d.ts",
   "files": [
-    "dist"
+    "esm",
+    "cjs",
+    "node-red",
+    "dropbox_src.*",
+    "dropbox_dest.*",
+    "extract-config.js"
   ],
   "scripts": {
     "build": "pnpm clean && pnpm compile && pnpm compile-commonjs",
