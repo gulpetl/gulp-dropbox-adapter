@@ -1,5 +1,5 @@
 // https://evertpot.com/universal-commonjs-esm-typescript-packages/
-// no esModuleInterop, so use 'import * ...'
+// no esModuleInterop, so use 'import * ...' (but not in ALL cases, on on 'lead' below)
 
 import * as through2 from 'through2'
 import * as Vinyl from 'vinyl'
@@ -21,7 +21,7 @@ import { parse as urlParse } from 'url'
 // import * as fs from 'fs';
 
 import { Dropbox, Error, sharing } from 'dropbox';
-import * as lead from 'lead'
+import lead from 'lead'
 
 /* This is a gulp plugin. It is compliant with best practices for Gulp plugins (see
 https://github.com/gulpjs/gulp/blob/master/docs/writing-a-plugin/guidelines.md#what-does-a-good-plugin-look-like ) */
